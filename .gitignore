@@ -1,0 +1,11 @@
+# Mac DS_Store Files
+.DS_Store
+
+# node
+node_modules
+
+# dist
+dist
+
+# yarn lock
+yarn.lock
