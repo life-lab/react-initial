@@ -6,6 +6,7 @@ module.exports = {
     entry: './src/app.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: "/dist/",
         filename: 'app.js'
     },
     module: {
@@ -74,5 +75,7 @@ module.exports = {
             filename: "style/[name].css",
             chunkFilename: "style/[id].css"
         })
-    ]
+    ],
+    devServer: {
+    },
 };
