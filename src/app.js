@@ -2,27 +2,22 @@
  * @Author: Max 
  * @Date: 2018-09-18 15:02:51 
  * @Last Modified by: Max
- * @Last Modified time: 2018-09-19 16:39:01
+ * @Last Modified time: 2018-09-20 11:22:42
  */
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import "./style/index.styl";
+
+/**
+ * import pages
+ * pages/ 目录在webpack.config.js -> resolve- > alias 中配置
+ */
+import Home from 'pages/home/index.jsx'
 
 class App extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            data: "Hello React!"
-        }
-    }
-
     render() {
         return (
-            <div className="bg">
-                <h1>{this.state.data}</h1>
-            </div>
+            <Home/>
         )
     }
 }

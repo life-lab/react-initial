@@ -9,10 +9,16 @@ module.exports = {
         publicPath: "/dist/",
         filename: 'app.js'
     },
+    resolve: {
+        alias: {
+            pages: path.resolve(__dirname, 'src/pages'),
+            images: path.resolve(__dirname, 'src/images'),
+        }
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 use: {
                     loader: 'babel-loader',
